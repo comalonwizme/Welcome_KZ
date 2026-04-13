@@ -32,9 +32,9 @@
 
 | Profile | Member | GitHub |
 | :---: | :--- | :--- |
-| <img src="https://github.com/identicons/user1.png" width="45"> | **Developer 1** | [@username1](https://github.com/username1) |
-| <img src="https://github.com/identicons/user2.png" width="45"> | **Developer 2** | [@username2](https://github.com/username2) |
-| <img src="https://github.com/identicons/user3.png" width="45"> | **Developer 3** | [@username3](https://github.com/username3) |
+| <img src="https://github.com/identicons/user1.png" width="45"> | **Aliaidar Abilmansur** | [@username1](https://github.com/username1) |
+| <img src="https://github.com/identicons/user2.png" width="45"> | **Kalmurzaev Nurdaulet** | [@username2](https://github.com/username2) |
+| <img src="https://github.com/identicons/user3.png" width="45"> | **Rakhmetov Aldiyar** | [@username3](https://github.com/username3) |
 ---
 
 ## 🚀 Getting Started
