@@ -1,4 +1,4 @@
-# Welcome_KZ 🇰🇿
+# Welcome KZ 🇰🇿
 
 > **A professional dual-sided platform revolutionizing tourism in Kazakhstan by connecting expert local guides with global travelers.**
 
