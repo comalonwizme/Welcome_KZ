@@ -11,7 +11,7 @@
 
 ## 🌟 Overview
 
-**Welcome_KZ** is an ecosystem designed to digitize the Kazakhstani tourism industry. It serves as a bridge between professional guides, who can digitize their signature tours, and tourists looking for authentic, off-the-beaten-path experiences.
+**Welcome KZ** is an ecosystem designed to digitize the Kazakhstani tourism industry. It serves as a bridge between professional guides, who can digitize their signature tours, and tourists looking for authentic, off-the-beaten-path experiences.
 
 ### Key Solutions:
 * **For Guides:** A robust CRM to manage business operations, including tour creation (CRUD), itinerary scheduling, and profile management.
