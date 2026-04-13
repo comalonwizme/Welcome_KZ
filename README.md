@@ -4,4 +4,9 @@ Welcome KZ - is a two-way platform for tourism development in Kazakhstan, unitin
 ## 🌟 About the project
 The site allows guides to log in and independently add their own signature tours, creating unique itineraries for visitors to the country.
 * 👤 **For guides:** Registration, personal account and full tour management (CRUD).
-* 🗺 **For tourists:** Conveniently browse available destinations and search for professional guides.
+*  **For tourists:** Conveniently browse available destinations and search for professional guides.
+
+
+* **Frontend:** [Angular](https://angular.io/)
+* **Backend:** [Django](https://www.djangoproject.com/)
+* 
