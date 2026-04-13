@@ -32,67 +32,8 @@
 
 | Profile | Member | GitHub |
 | :---: | :--- | :--- |
-| <img src="https://github.com/identicons/user1.png" width="45"> | **Aliaidar Abilmansur** | [@username1](https://github.com/username1) |
+| <img src="https://github.com/identicons/user1.png" width="45"> | **Aliaidar Abilmansur** | [@username1](https://github.com/comalonwizme) |
 | <img src="https://github.com/identicons/user2.png" width="45"> | **Kalmurzaev Nurdaulet** | [@username2](https://github.com/username2) |
-| <img src="https://github.com/identicons/user3.png" width="45"> | **Rakhmetov Aldiyar** | [@username3](https://github.com/username3) |
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-* Python 3.10+
-* Node.js (LTS version)
-* Angular CLI (`npm install -g @angular/cli`)
-
-### Backend Setup
-1.  **Clone & Enter:**
-    ```bash
-    git clone [https://github.com/your-username/Welcome_KZ.git](https://github.com/your-username/Welcome_KZ.git)
-    cd Welcome_KZ/backend
-    ```
-2.  **Environment:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate # Windows: venv\Scripts\activate
-    pip install -r requirements.txt
-    ```
-3.  **Run:**
-    ```bash
-    python manage.py migrate
-    python manage.py runserver
-    ```
-
-### Frontend Setup
-1.  **Install Dependencies:**
-    ```bash
-    cd ../frontend
-    npm install
-    ```
-2.  **Launch:**
-    ```bash
-    ng serve --open
-    ```
-    *Visit `http://localhost:4200` to see the magic happen.*
-
----
-
-## 🗺 Roadmap
-
-- [ ] Core API Infrastructure
-- [ ] Guide Authentication & Profile Dashboard
-- [ ] Tour Management System (CRUD)
-- [ ] Integration of Interactive Maps (Leaflet/Mapbox)
-- [ ] Real-time Booking & Payment Gateway
-- [ ] Multi-language Support (KZ, RU, EN)
-
----
-
-## 📸 Interface Preview
-
-*(Upload your screenshots to the `/assets` folder and link them below)*
-<p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Welcome_KZ+Interface+Mockup" alt="Welcome_KZ Dashboard">
-</p>
-
+| <img src="https://github.com/identicons/user3.png" width="45"> | **Rakhmetov Aldiyar** | [@username3](https://github.com/AldiyarRakhmetov) |
 ---
 <p align="center">Made with ❤️ for the development of Kazakhstan Tourism.</p>
