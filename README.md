@@ -32,8 +32,8 @@
 
 | Profile | Member | GitHub |
 | :---: | :--- | :--- |
-| <img src="https://github.com/identicons/user1.png" width="45"> | **Aliaidar Abilmansur** | [@Abilmansur](https://github.com/comalonwizme) |
-| <img src="https://github.com/identicons/user2.png" width="45"> | **Kalmurzaev Nurdaulet** | [@Nurdaulet](https://github.com/username2) |
-| <img src="https://github.com/identicons/user3.png" width="45"> | **Rakhmetov Aldiyar** | [@Aldiyar](https://github.com/AldiyarRakhmetov) |
+| <img src="https://github.com/identicons/user1.png" width="45"> | **Aliaidar Abilmansur** | [Abilmansur](https://github.com/comalonwizme) |
+| <img src="https://github.com/identicons/user2.png" width="45"> | **Kalmurzaev Nurdaulet** | [Nurdaulet](https://github.com/NurdauletKalm) |
+| <img src="https://github.com/identicons/user3.png" width="45"> | **Rakhmetov Aldiyar** | [Aldiyar](https://github.com/AldiyarRakhmetov) |
 ---
 <p align="center">Made with ❤️ for the development of Kazakhstan Tourism.</p>
