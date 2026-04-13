@@ -22,7 +22,7 @@
 ## 🛠 Tech Stack
 
 ### **Frontend**
-* **Framework:** Angular (v17+)
+* **Framework:** Angular
 
 ### **Backend**
 * **Framework:** Django & Django REST Framework (DRF)
