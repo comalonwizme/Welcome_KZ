@@ -19,6 +19,11 @@ class Company(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     rating = models.FloatField(default=5.0, validators=[MinValueValidator(0), MaxValueValidator(5)])
     objects = CompanyManager()
+
+    address = models.CharField(max_length=255, blank=True)
+    phone = models.CharField(max_length=20, blank=True)
+    email = models.EmailField(blank=True)
+    website = models.URLField(null=True, blank=True)
     def __str__(self):
         return self.name
 
@@ -52,7 +57,7 @@ class EmploymentRequest(models.Model):
         ('rejected', "Rejected"),
     ]
 
-    guide = models.ForeignKey(User, on_delete=models.CASCADE, related_name="job_application")
+    guide = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name="job_application")
     company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='recieved_application')
     status = models.CharField(max_length=10, choices=STATUS_CH, default='pending')
     message = models.TextField()
