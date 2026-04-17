@@ -21,7 +21,7 @@ class RegisterSerializer(serializers.Serializer):
         default = 'tourist',
     )
 
-    def valifate_email(self, value):
+    def validate_email(self, value):
         if User.objects.filter(email=value).exists():
             raise serializers.ValidationError("Уже существует аккаунт с таким email!")
         return value
@@ -40,3 +40,5 @@ class RegisterSerializer(serializers.Serializer):
                 role = validated_data['role']
             )
         return user
+    
+
