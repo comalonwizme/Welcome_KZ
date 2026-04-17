@@ -42,3 +42,25 @@ class RegisterSerializer(serializers.Serializer):
         return user
     
 
+class CompanySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Company
+        fields = '__all__'
+        read_only_fields = ['rating', 'is_verified', 'created_at']
+
+
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = '__all__'
+        read_only_fieilds = ['rating', 'role']
+
+
+class TourSerializer(serializers.ModelSerializer):
+    company_name = serializers.ReadOnlyField(source = "company.name")
+    guide_name = serializers.ReadOnlyField(source = "guide.user.username")
+    class Meta:
+        model = Tour
+        fields = "__all__"
+        read_only_fields = ['is_active', 'company', 'created_at']
+
