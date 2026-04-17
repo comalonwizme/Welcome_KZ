@@ -17,7 +17,7 @@ class Company(models.Model):
     description = models.TextField()
     is_verified = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    rating = models.FloatField(default=5.0, validators=[MinValueValidator(0), MaxValueValidator(5)])
+    rating = models.FloatField(default=5.0, validators=[MinValueValidator(1), MaxValueValidator(5)])
     objects = CompanyManager()
 
     address = models.CharField(max_length=255, blank=True)
@@ -42,7 +42,7 @@ class Profile(models.Model):
     profile_image = models.ImageField(upload_to="profiles/", null=True, blank=True)
 
     company = models.ForeignKey(Company, on_delete=models.SET_NULL, null=True, blank=True, related_name='guides')
-    rating = models.FloatField(default=5.0, validators=[MinValueValidator(0), MaxValueValidator(5)])
+    rating = models.FloatField(default=5.0, validators=[MinValueValidator(1), MaxValueValidator(5)])
     bio = models.TextField(null=True, blank=True)
 
     def __str__(self):
@@ -64,7 +64,7 @@ class EmploymentRequest(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.guide.username} -> {self.company.name} ({self.status})"
+        return f"{self.guide.user.username} -> {self.company.name} ({self.status})"
     
 
 class Tour(models.Model):
