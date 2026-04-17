@@ -53,7 +53,7 @@ class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = '__all__'
-        read_only_fieilds = ['rating', 'role']
+        read_only_fields = ['rating', 'role']
 
 
 class TourSerializer(serializers.ModelSerializer):
@@ -64,3 +64,18 @@ class TourSerializer(serializers.ModelSerializer):
         fields = "__all__"
         read_only_fields = ['is_active', 'company', 'created_at']
 
+
+class BookingSerializer(serializers.ModelSerializer):
+    tour_title = serializers.ReadOnlyField(source = 'tour.title')
+    tour_location = serializers.ReadOnlyField(source = 'tour.location')
+    username = serializers.ReadOnlyField(source = 'user.username')
+
+    class Meta:
+        model = Booking
+        fields = "__all__"
+        read_only_fields = ['username', 'created_at', 'status']
+
+    def validate_rating(self, value):
+        if self.instance and self.instance.status != 'completed':
+            raise serializers.ValidationError("Можете оценить только после завершения тура")
+        return value
