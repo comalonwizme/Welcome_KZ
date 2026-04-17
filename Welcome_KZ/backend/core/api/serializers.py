@@ -36,7 +36,7 @@ class RegisterSerializer(serializers.Serializer):
 
             Profile.objects.create(
                 user = user,
-                phone_number = validated_data['phone_number']
+                phone_number = validated_data['phone_number'],
                 role = validated_data['role']
             )
         return user
