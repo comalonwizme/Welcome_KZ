@@ -16,7 +16,6 @@ class RegisterSerializer(serializers.Serializer):
     phone_number = serializers.CharField(max_length = 20)
 
     role = serializers.ChoiceField(
-        max_length = 20,
         choices=Profile.ROLES_CHOICES,
         default = 'tourist',
     )
