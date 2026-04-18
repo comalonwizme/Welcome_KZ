@@ -1,0 +1,20 @@
+<div class="auth-content">
+    @if(errorMessage){
+        {{errorMessage}}
+    }
+
+    <input 
+        [(ngModel)]="form.username"
+        placeholder="Username"
+        type="text"
+    />
+    <input 
+        [(ngModel)]="form.password"
+        placeholder="Password"
+        type="password"
+    />
+
+    <button (click)="login()" [disabled]="is_load">
+        {{is_load ? "Loading..." : "Log In" }}
+    </button>
+</div>
