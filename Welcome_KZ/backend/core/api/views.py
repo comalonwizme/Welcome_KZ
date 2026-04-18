@@ -1,10 +1,22 @@
 from rest_framework import generics, status
 from rest_framework.decorators import api_view, permission_classes
-from .serializers import RegisterSerializer
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from .serializers import RegisterSerializer, CompanySerializer
+from rest_framework.permissions import AllowAny, IsAuthenticated, BasePermission
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.response import Response
 from django.contrib.auth import authenticate
+from .models import Company, Profile
+
+class IsOwner(BasePermission):
+    def has_permission(self, request, view):
+        return (
+            request.user.is_authenticated and hasattr(request.user, 'profile') and request.user.profile.role == 'owner'
+        )
+    
+class IsCompanyOwner(BasePermission):
+    def has_object_permission(self, request, view, obj):
+        return obj.owner == request.user
+
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -48,3 +60,27 @@ def login_view(request):
             "error": "Неверный логин или пароль",
         }, status=status.HTTP_401_UNAUTHORIZED
     )
+
+class CompanyListCreateView(generics.ListCreateAPIView):
+    serializer_class = CompanySerializer
+ 
+    def get_permissions(self):
+        if self.request.method == 'POST':
+            return [IsOwner()]
+        return [AllowAny()]
+ 
+    def get_queryset(self):
+        return Company.objects.verified().order_by('-rating')
+ 
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
+
+class CompanyDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Company.objects.all()
+    serializer_class = CompanySerializer
+ 
+    def get_permissions(self):
+        if self.request.method == 'GET':
+            return [IsAuthenticated()]
+        return [IsAuthenticated(), IsCompanyOwner()]
+ 
