@@ -4,7 +4,7 @@
 
 [![Angular](https://img.shields.io/badge/Frontend-Angular%2017-red?logo=angular&style=flat-square)](https://angular.io/)
 [![Django](https://img.shields.io/badge/Backend-Django%205.0-green?logo=django&style=flat-square)](https://www.djangoproject.com/)
-[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue?logo=postgresql&style=flat-square)](https://www.postgresql.org/)
+[![DBSQLite](https://img.shields.io/badge/Database-PostgreSQL-blue?logo=postgresql&style=flat-square)](https://www.postgresql.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ---
