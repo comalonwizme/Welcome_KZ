@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Company, Profile, Tour, EmploymentRequest, Booking
+from .models import Company, Profile, Tour, Booking
 from django.contrib.auth.password_validation import validate_password
 from django.db import transaction
 
